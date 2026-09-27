@@ -1,0 +1,425 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MyPortfolio</title>
+<head>
+<meta name="theme-color" content="#D6EDFF">
+<link href="https://fonts.googlefonts.cn/css?family=Homemade+Apple|Katibeh" rel="stylesheet">
+<link href="https://fonts.googlefonts.cn/css?family=Poppins" rel="stylesheet">
+
+<style>
+html {
+  scroll-behavior: smooth;
+}
+
+ @keyframes up {
+  0% {
+    top:65%;opacity:1;
+  }
+
+  100% {
+   top:10%;opacity:0;
+  }
+}
+@keyframes appear{
+0%{opacity:0;}
+100%{opacity:1;}
+}
+
+body{background-color:#D6EDFF;}
+.head{
+         
+         height:100%;width:100%;
+         position:absolute;
+         top:0;left:0;
+}
+.partOne{
+         height:130%;width:100%;
+         position:absolute;
+         top:100%;left:0;
+}
+.partTwo{
+         height:130%;width:100%;
+         position:absolute;
+         top:230%;left:0;
+}
+.about{
+         height:130%;width:100%;
+         position:absolute;
+         top:350%;left:0;
+}
+.partThree{
+              height:110%;
+              width:100%;
+              position:absolute;
+              top:510%;
+              left:0;
+}
+.title {
+          font-size:35px;
+          font-family: 'Katibeh', cursive;
+          position:absolute;
+          top:3%;
+          left:5%;
+}
+.links {
+          font-size:15px;
+          font-family:;
+          word-spacing:30px;
+          position:absolute;
+          top:5%;
+          right:5%;
+}
+.links a{color:#000;text-decoration:none;}
+.textOne{
+         width:40%;
+        font-size:70px;
+        text-align:center;
+        font-family: 'Katibeh', cursive;
+        position:absolute;
+        top:35%;left:30%;
+}
+.left .textOne{top:5%;left:15%;}
+
+.aboutleft .textOne{width:35%;text-align:left;top:40%;left:12%;}
+.aboutright .textOne{width:35%;text-align:left;top:100%;left:55%;}
+
+
+.handw{font-size:30px;color:#5ABE6A;font-family: 'Homemade Apple', cursive;line-height:15px;}
+.partTwo .handw{line-height:60px;}
+.small{font-size:30px;display:inline-block;margin-top:40px;}
+.smallp{font-size:19px;font-family: 'Poppins', sans-serif;display:inline-block;margin-top:20px;}
+.smallp a{text-decoration:none;color:#000;}
+.button{
+             height:70px;
+             width:200px;
+             border-radius:20px;
+             background-color:#5abe6a;
+             display:inline-block;
+             font-size:33px;
+             line-height:55px;
+             color:#D6EDFF;
+             margin-top:40px;
+}
+.vibe{
+         height:20px;width:20px;
+         border-radius:100%;
+         background-color:#feb661;
+         position:absolute;
+        top:65%;left:10%;
+        animation:up 2s ease;
+        display:none;
+}
+
+.linetext{
+         width:90%;
+        font-size:150px;
+        text-align:center;
+        font-family: 'Katibeh', cursive;
+        color:rgba(0,0,0,0);
+        -webkit-text-stroke: 1px #5ABE6A;-webkit-text-stroke: 1px #000;
+        word-spacing:50px;
+        position:absolute;
+        top:0;left:5%;
+        animation:none 1s ease;
+}
+.card{
+         height:27%;
+         width:16%;
+         border-radius:25px;
+         background-image:url(sticker/Knowledge.gif);
+           background-size:100%;
+           background-repeat:no-repeat;
+         position:absolute;
+         top:39%;left:15%;
+         }
+.card:hover .img{display:block;animation:appear 1s ease;}
+
+.card2 .card{background-image:url(sticker/Bottom%20dance.gif);top:39%;left:33%;}
+
+.card3 .card{background-image:url(sticker/Good%20baby.gif);left:51%;}
+.card4 .card{background-image:url(sticker/Run.gif);left:69%;}
+.card5 .card{background-image:url(sticker/Water%20lotus.gif);top:70%;}
+.card6 .card{background-image:url(sticker/Okay.gif);top:70%;left:33%;}
+.card7 .card{background-image:url(sticker/Light%20speed%20kick.gif);top:70%;left:51%;}
+.card8 .card{background-image:url(sticker/Car%20ride.gif);top:70%;left:69%;}
+
+.pink .card{height:35%;width:40%;background-image:url(sticker/Board%20cover%201.jpg);top:40%;left:52%;}
+.draw .card{height:35%;width:40%;background-image:url(sticker/AboutGif.png);top:90%;left:12%;}
+
+
+
+
+
+.QR{
+         height:35%;
+         width:25%;
+         border-radius:25px;
+         background-color:#5ABE6A;
+         position:absolute;
+         top:45%;left:50%;
+         }
+.QRContent{
+         height:53%;
+         width:50%;
+         border-radius:10px;
+         background-image:url(sticker/QRtuan.jpeg);
+           background-size:100%;
+           background-repeat:no-repeat;
+         position:absolute;
+         top:25%;left:25%;
+         }
+
+
+.reminder{
+         height:17%;
+         width:20%;
+         border-radius:25px;
+           border:1px dashed black;
+         background-color:#D6EDFF;
+          font-family: 'Poppins', sans-serif;
+          text-align:center;
+          font-size:20px;
+          padding-top:30px;
+         position:fixed;
+         top:70%;left:70%;
+        
+         }
+
+
+
+
+.footer{
+            font-size:30px;
+            font-family: 'Katibeh', cursive;
+            position:absolute;
+            top:75%;left:10%;
+}
+.two .footer{left:25%;}
+.footer a{font-size:19px;font-family:ara;text-decoration:none;color:#000;}
+.vibe{
+         height:90px;width:90px;
+         border-radius:100%;
+         background-image:linear-gradient(#feb661, rgba(255,255,255,0));
+         position:absolute;
+        top:25%;left:60%;
+}
+.vibeL{
+         height:125px;width:125px;
+         border-radius:100%;
+         background-image:linear-gradient(#61fe71, rgba(255,255,255,0));
+         position:absolute;
+        top:67%;left:35%;
+}
+.vibeS{
+         height:30px;width:30px;
+         border-radius:100%;
+         background-color:#feb661;
+         position:absolute;
+        top:87%;left:60%;
+}
+.deco{
+         height:90px;width:90px;
+         background-image:url(deco/deco1.svg);
+         background-size:100%;background-repeat:no-repeat;
+         position:absolute;
+         top:100%;left:60%;
+         animation:none 1s ease;
+}
+.footer-img{
+       height:400px;width:300px;
+       background-image:url(top.png);
+       background-size:100%;background-repeat:no-repeat;
+       border-radius:10px;
+       position:absolute;
+       top:70%;left:75%;
+       color:transparent;
+}
+.menu-icon{
+            height:40px;
+            width:40px;
+            background-image:url(leaf.png);
+            background-size:100%;
+            position:fixed;
+            top:3%;right:5%;
+            display:none;
+ }
+ #menu-content{
+            height:100%;
+            width:100%;
+            background-color:#D6EDFF;
+            position:fixed;
+            top:0%left:0%;
+            display:none;
+ }
+ #menu-content:target{display:block;}
+ #menu-content .textOne{top:30%;}
+.textOne a{color:#000;text-decoration:none;}
+             
+@media screen and (max-width:700px){
+  
+  .handw{font-size:30px;display:inline-block;margin-bottom:35px;}
+ .vibe{z-index:-1;top:12%;}
+ .textOne{width:90%;font-size:60px;left:5%;top:22%;}
+.button{line-height:83px;margin-top:30px;}
+ .buttonl{line-height:83px;}
+ .links{opacity:0;}
+ .menu-icon{display:block;}
+
+  /*this is partOne*/
+  .linetext{font-size:125px;}
+  .partOne{top:80%;}
+  .card{top:10%;left:25%;width:50%;height:25%;}
+  .card2 .card{top:35%;left:25%;width:50%;}
+  .card3 .card{top:60%;left:25%;width:50%;}
+  .card4 .card{top:85%;left:25%;width:50%;}
+  .card5 .card{top:110%;left:25%;width:50%;}
+  .card6 .card{top:135%;left:25%;width:50%;}
+  .card7 .card{top:160%;left:25%;width:50%;}
+  .card8 .card{top:185%;left:25%;width:50%;}
+  
+  
+
+  /*this is partTwo*/
+  .partTwo{top:355%;}
+  .left .textOne{left:5%;width:90%;}
+  .left .smallp{margin-top:10px;}
+  .QR{top:50%;left:15%;height:27%;width:70%;}
+  .QRContent{top:15%;left:15%;height:70%;width:70%;}
+
+  /*this is about*/
+  .about{top:465%;}
+  .pink .card{height:50%;width:100%;border-radius:0;top:15%;left:0;}
+  .aboutleft .textOne{width:90%;top:47%;left:5%;}
+  .aboutright .textOne{width:90%;top:127%;left:5%;}
+  
+  .draw .card{height:50%;width:100%;border-radius:0;top:90%;left:0;}
+
+
+  
+  /*this is partThree*/
+  .partThree{top:660%;}
+  .two .footer{left:45%;z-index:2;}
+
+   .footer-img{left:5%;top:75%;z-index:-1;}
+
+  .reminder{display:none;}
+
+
+
+}
+</style>
+</head>
+<body>
+<div class="head">
+       <div class="title">Elle Liao</div>
+        <div class="links"><a href="about.html">About</a>    <a href="https://www.instagram.com/expressdesign102/">MyWorks</a>    <a href="exp.html">MyExperience</a>   <a href="mailto:elleliao58@outlook.com">Contact</a></div>       
+       <div class="textOne"><span class="handw">Handmade</span><br>
+                                           Animated stickers<br>
+                                           <span class="smallp">Handcrafted gif stickers available for download based on stories of the mysterious little tuan.</span><br>
+                                             <a href="#partOne"><span class="button">Learn more</span></a><br>
+                                             
+                               
+      </div>
+      <div class="vibe"></div>
+      
+     
+</div>
+<div class="partOne" id="partOne">
+       <div class="linetext">Stickers</div>
+        <a href="sticker/Knowledge.gif"><div class="card">
+                        </div></a>
+        
+        <a href="sticker/Bottom%20dance.gif"><div class="card2"><div class="card">
+                                </div></div></a>
+         <a href="sticker/Good%20baby.gif"><div class="card3"><div class="card">
+                     
+        </div></div></a>
+         <a href="sticker/Run.gif"><div class="card4"><div class="card">
+                            </div></div>
+        <a href="sticker/Water%20lotus.gif"><div class="card5"><div class="card">
+                              </div></div>
+        
+        <a href="sticker/Okay.gif"><div class="card6"><div class="card">
+                                </div></div>
+         <a href="sticker/Light%20speed%20kick.gif"><div class="card7"><div class="card">
+                     
+        </div></div>
+         <a href="sticker/Car%20ride.gif"><div class="card8"><div class="card">
+                            </div></div></a>
+
+
+
+</div>
+
+
+<div class="partTwo" id="partTwo">
+
+       <div class="left"><div class="textOne">
+                                           Find us on Wechat<br>
+                                           <span class="smallp">I have uploaded the stickers as a package available for download on wechat. Its okay if you don't like wechat, just download directly by clicking the gif above.</span><br>
+                                             <a href="https://sticker.weixin.qq.com/cgi-bin/mmemoticon-bin/emoticonview?oper=single&t=shop/detail&productid=aL2PCfwK/89qO7sF6/+I+UDhfwEjhec2ZNvdnLLJRd/NBhiOititWWzyNwcYJbs9j/Cv0tq8l3RSemwBehx0Txc8vaBSHzYCdWl2m/S/jv1Q="><span class="button">Open</span></a><br>
+                                             
+                               
+      </div></div>
+      <div class="QR">
+               <div class="QRContent"></div>
+       </div>
+</div>
+
+<div class="about" id="about">
+
+
+       <div class="linetext">About</div>
+        <div class="aboutleft"><div class="textOne">
+                                       <span class="handw">Origin</span><br>
+                                       <span class="smallp">The creatures in the sticker is called little tuan, she is a tuan, a creature that lives in the mountains of Shenzhen Dapeng. They are the only known intelligent creature 
+                                                           on Earth apart from human, if you are lucky enough, you might spot one while hiking.
+                                       </span>
+            
+       </div></div>
+       <div class="pink"><div class="card"></div></div>
+     
+        <div class="aboutright"><div class="textOne">
+                                       <span class="handw">Next Collection</span><br>
+                                       <span class="smallp">This picture is the sketch of my earlier animation collection, the little E and purple. They are my first animation collections
+                                                             so the technique is pretty rough, but I love them as they are the starting point of my illustration journey. Click on it to check it out : )</span>
+            
+       </div></div>
+       <a href="sticker.html"><div class="draw"><div class="card"></div></div></a>
+
+
+
+</div>
+
+
+<div class="partThree">
+         <div class="vibeL"></div><div class="vibeS"></div> <div class="deco"></div>
+        <div class="textOne">
+                       <span class="handw">#SayHi</span><br>
+                       Contact me<br>
+                       <span class="smallp">If you found my work interesting, have a job for me, or want to be my friends, please drop me a line.</span><br>
+                       <a href=""><span class="button">Drop me a line</span></a>
+         </div>
+         <div class="footer">About<br>
+                 <a href="about.html">About me</a><br>   <a href="https://www.instagram.com/expressdesign102">MyWorks</a><br>   <a href="exp.html">MyExperience</a><br>   <a href="mailto:elleliao58@outlook.com">Contact</a>
+         </div>     
+         <div class="two"><div class="footer">Socials<br>
+                 <a href="https://profile.indeed.com/?hl=en_GB&co=GB&from=gnav-jobseeker-profile--profile-one-frontend">Indeed</a><br>   
+                  <a href="https://www.linkedin.com/in/%E7%8E%A5-%E5%BB%96-7124b72a0/">Linkedin</a><br>   
+                  <a href="https://www.instagram.com/expressdesign102/">instagram</a><br>  
+         </div></div>  
+         <div class="footer-img">Image from rawpixel.com</div>   
+</div>
+<a href="#menu-content"><div class="menu-icon"></div></a>
+ <div id="menu-content">
+    <div class="textOne">
+         <a href="about.html">About</a><br>    <a href="https://www.instagram.com/expressdesign102/">MyWorks</a><br>    
+          <a href="exp.html">MyExperience</a><br>   <a href="mailto:elleliao58@outlook.com">Contact</a><br>
+          <span class="green"><a href="#">Back</a></span>
+    </div>
+  
+ </div>
+
+<div class="reminder">This page is under construction &#128760;</div>
+</body>

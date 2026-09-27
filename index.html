@@ -1,0 +1,636 @@
+<html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MyPortfolio</title>
+<head>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<meta name="theme-color" content="#D6EDFF">
+<link href="https://fonts.googlefonts.cn/css?family=Homemade+Apple|Katibeh" rel="stylesheet">
+<link href="https://fonts.googlefonts.cn/css?family=Poppins" rel="stylesheet">
+
+
+
+<style>
+
+ 
+ @keyframes moveup {
+  0% {
+    transform: translateY(0%);
+  }
+  
+
+  50% {
+    transform: translateY(-30%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@keyframes rotate{
+0%{transform:rotate(0deg);}
+50%{transform:rotate(12deg);}
+100%{transform:rotate(0deg);}
+}
+
+
+@keyframes gift{
+ 0%{top:-20%;opacity:1;}
+ 90%{opacity:1;}
+ 100%{top:120%;opacity:0;}
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body{background-color:#D6EDFF;}
+.head{
+         
+         height:130%;width:100%;
+         position:absolute;
+         top:0;left:0;
+}
+.partOne{
+      
+         height:130%;width:100%;
+         position:absolute;
+         top:130%;left:0;
+}
+.partTwo{
+         background-color:#D6EDFF;
+         height:130%;width:100%;
+         position:absolute;
+         top:260%;left:0;
+}
+.partThree{
+        
+         height:100%;width:100%;
+         position:absolute;
+         top:390%;left:0;
+}
+.partFour{
+        
+         height:100%;width:100%;
+         position:absolute;
+         top:490%;left:0;
+}
+.partFive{
+              height:150%;
+              width:100%;
+              background-color:#b3deff;
+              position:absolute;
+              top:590%;
+              left:0;
+}
+.partSix{
+              height:110%;
+              width:100%;
+              position:absolute;
+              top:740%;
+              left:0;
+}
+.title {
+          font-size:35px;
+          font-family: 'Katibeh', cursive;
+          position:absolute;
+          top:3%;
+          left:10%;
+}
+ .icon{
+         height:30px;width:30px;
+         background-image:url(leaf.png);
+         background-size:100%;background-repeat:no-repeat;
+         position:absolute;
+         top:3.5%;left:7%;
+         animation:none 1s ease;
+}
+.links {
+          font-size:15px;
+          font-family:;
+          word-spacing:30px;
+          position:absolute;
+          top:5%;
+          right:5%;
+}
+.links a{color:#000;text-decoration:none;}
+ .textOne a{color:#000;text-decoration:none;}
+.textOne{
+         width:40%;
+        font-size:70px;
+        text-align:center;
+        font-family: 'Katibeh', cursive;
+        position:absolute;
+        top:15%;left:30%;
+}
+.textTwo{
+        width:40%;
+        font-size:60px;
+        text-align:center;
+        font-family: 'Katibeh', cursive;
+        position:absolute;
+        top:15%;left:45%;
+}
+.handw{font-size:30px;color:#5ABE6A;font-family: 'Homemade Apple', cursive;line-height:15px;}
+.partTwo .handw{line-height:60px;}
+.small{font-size:30px;display:inline-block;margin-top:40px;}
+.smallp{font-size:19px;font-family: 'Poppins', sans-serif;display:inline-block;margin-top:20px;}
+.small a{text-decoration:none;color:#000;}
+
+/*color*/
+.green{color:#5ABE6A;}
+.oran{color:#FF8B49}
+.blue{color:#2C684B}
+.bro{color:#BE8B5C}
+.dblue{color:#292368}
+/*color*/
+
+.partOne .textOne{font-size:60px;width:60%;left:20%;top:5%}
+.partTwo .textOne{font-size:60px;width:60%;left:20%;top:70%}
+.partThree .textTwo{left:10%;top:20%}
+.partFour .textTwo{top:20%;}
+.partFive .textOne{width:70%;font-size:60px;color:#2C684B;left:15%}
+
+.linetext{
+         width:90%;
+        font-size:50px;
+        text-align:center;
+        font-family: 'Katibeh', cursive;
+        color:rgba(0,0,0,0);
+        -webkit-text-stroke: 1px #5ABE6A;
+        word-spacing:50px;
+        position:absolute;
+        top:80%;left:5%;
+        animation:none 1s ease;
+}
+.ns{word-spacing:10px;}
+
+.ns:hover{color: #5ABE6A;-webkit-text-stroke: 0px #5ABE6A;}
+
+.button{
+             height:70px;
+             width:200px;
+             border-radius:20px;
+             background-color:#5abe6a;
+             display:inline-block;
+             font-size:33px;
+             line-height:55px;
+             color:#D6EDFF;
+             margin-top:40px;
+}
+.buttonl{
+             height:70px;
+             width:200px;
+             border:1px dashed #000;
+             border-radius:20px;
+             background-color:;
+             display:inline-block;
+             font-size:33px;
+             line-height:55px;
+             color:#000;
+             margin-top:20px;
+}
+.partFive .buttonl{color:#D6EDFF;border:1px dashed #D6EDFF;}
+.vibe{
+         height:90px;width:90px;
+         border-radius:100%;
+         background-image:linear-gradient(#feb661, rgba(255,255,255,0));
+         position:absolute;
+        top:15%;left:60%;
+}
+.vibeL{
+         height:125px;width:125px;
+         border-radius:100%;
+         background-image:linear-gradient(#61fe71, rgba(255,255,255,0));
+         position:absolute;
+        top:67%;left:35%;
+}
+.vibeS{
+         height:30px;width:30px;
+         border-radius:100%;
+         background-color:#feb661;
+         position:absolute;
+        top:87%;left:60%;
+}
+.deco{
+         height:90px;width:90px;
+         background-image:url(deco/deco1.svg);
+         background-size:100%;background-repeat:no-repeat;
+         position:absolute;
+         top:55%;left:60%;
+         animation:none 1s ease;
+}
+.deco:hover{animation:rotate 1s ease;}
+ .A .deco{height:30px;width:30px;background-image:url(deco/decoA.svg);top:20%;left:65%;}
+ .B .deco{height:30px;width:30px;background-image:url(deco/decoB.svg);top:59%;left:27%;}
+ .decoC{
+         height:100px;width:60px;
+         background-image:url(deco/decoC.svg);
+         background-size:100%;background-repeat:no-repeat;
+         -webkit-transform: scaleX(-1);
+         transform: scaleX(-1);
+         position:absolute;
+         top:7%;right:46%;
+         animation:none 1s ease;
+}
+.two .deco{background-image:url(deco/deco2.svg);top:10%;left:10%;}
+.three .deco{background-image:url(deco/deco3.svg);top:80%;left:45%;}
+.four .deco{height:50px;width:50px;background-image:url(deco/decoFour.svg);top:7%;left:49%;}
+.card{
+       height:265px;width:216px;
+       background-image:url(playlist.svg);
+       border-radius:20px;
+       position:absolute;
+       top:50%;left:7%;
+       animation:no 2s ease;
+       overflow:hidden;
+}
+.card2{
+       height:216px;width:216px;
+       background-image:url(sticker/hughug.gif);
+       background-size:100%;background-repeat:no-repeat;
+       border-radius:20px;
+       position:absolute;
+       bottom:20%;left:75%;
+       animation:no 2s ease;
+       overflow:hidden;
+}
+.card:hover, .card2:hover{animation:moveup 1s ease;}
+.img{
+       height:360px;width:300px;
+       background-image:url(london.jpg);
+       background-size:100%;background-repeat:no-repeat;
+       border-radius:10px;
+       border:5px solid white;
+       box-shadow: 10px 10px 10px rgba(0,0,0,0.1);
+       position:absolute;
+       top:10%;left:10%;
+       animation:no 2s ease;
+}
+.partThree .img{height:390px;width:410px;background-image:url(ui.png);top:20%;left:55%;}
+
+.textblock{
+                 height:100px;width:350px;
+                 border-radius:20px;
+                 background-color:#FF8B49;
+                 font-size:50px;
+                 line-height:80px;
+                 text-align:center;
+                 font-family: 'Katibeh', cursive;
+                 color:#D6EDFF;
+                 position:absolute;
+                 top:15%;left:10%;
+                transition:height 1s;
+                -webkit-transition:height 1s;
+}
+.textblock .hide{display:none;opacity:0;transition:opacity 1s;}
+.light .buttonl{
+                       color:#D6EDFF;
+                       border:1px dotted #D6EDFF;
+}
+
+
+.textblock:hover .hide{display:block;opacity:1;}
+.textblock:hover{height:500px;z-index:2;}
+.two .textblock:hover{-webkit-transform:rotate(0deg);transform:rotate(0deg);animation:rotate 1s ease;}
+
+.two .textblock{-webkit-transform:rotate(12deg);transform:rotate(12deg);top:35%;background-color:#5ABE6A}     
+.three .textblock{top:55%;background-color:#D6EDFF;border:1px dotted black;color:#5ABE6A;} 
+
+.textcard{ 
+               height:349;width:263;
+               border-radius:20px;
+               border:1px solid #D6EDFF;
+                background-color:#2C684B;
+                font-size:40px;
+                 text-align:center;
+                 font-family: 'Katibeh', cursive;
+                 color:#D6EDFF;
+                position:absolute;
+                bottom:15%;left:5%;
+}
+.th{margin-top:10%;margin-left:10%;width:80%;}
+.two .textcard{left:28%;}
+.three .textcard{left:51%;}
+.four .textcard{left:74%;}
+
+.footer{
+            font-size:30px;
+            font-family: 'Katibeh', cursive;
+            position:absolute;
+            top:75%;left:10%;
+}
+.two .footer{left:25%;}
+.footer a{font-size:19px;font-family:ara;text-decoration:none;color:#000;}
+.partSix .img{
+               height:400px;
+               background-image:url(top.png);
+               border:0px solid #333;
+               box-shadow:0px 0px 0px #333;
+               left:75%;top:70%;
+               color:transparent;
+}
+ .menu-icon{
+            height:40px;
+            width:40px;
+            background-image:url(leaf.png);
+            background-size:100%;
+            position:fixed;
+            top:3%;right:5%;
+            display:none;
+ }
+ #menu-content{
+            height:100%;
+            width:100%;
+            background-color:#D6EDFF;
+            position:fixed;
+            top:0%left:0%;
+            display:none;
+ }
+ #menu-content:target{display:block;}
+ #menu-content .textOne{top:20%;}
+
+ /*New year deco*/
+ .gift{
+       height:90px;
+       width:90px;
+       background-image:url(newyear/fu.png);
+       background-size:100%;background-repeat:no-repeat;
+       position:fixed;
+        top: -20%;left:10%;
+       animation:gift 7s infinite;
+ }
+ .gift2 .gift{
+         height:50px;
+         width:50px;
+         background-image:url(newyear/red.png);
+         left:30%;
+         animation:gift 8s infinite;
+ }
+
+  .gift3 .gift{
+         height:70px;
+         width:70px;
+         background-image:url(newyear/gold.png);
+         left:50%;
+         animation:gift 9s infinite;
+ }
+   .gift4 .gift{
+         height:70px;
+         width:70px;
+         background-image:url(newyear/pao.png);
+         left:70%;
+         animation:gift 7s infinite;
+ }
+   .gift5 .gift{
+         height:50px;
+         width:50px;
+         background-image:url(newyear/red.png);
+         left:85%;
+         animation:gift 9s infinite;
+ }
+ 
+ .gift:hover{
+
+   -webkit-animation-play-state:paused;
+  -moz-animation-play-state:paused;
+  -o-animation-play-state:paused;
+  animation-play-state:paused;
+  cursor: pointer;
+  
+ }
+        
+ 
+             
+@media screen and (max-width:700px){
+ /*this head*/
+ .handw{font-size:30px;display:inline-block;margin-bottom:35px;}
+ .vibe{z-index:-1;top:12%;}
+ .title{left:5%;}
+ .textOne{width:90%;font-size:50px;left:5%;top:12%;}
+ .small{margin-top:20px;}
+ .card{top:75%;left:23%;} 
+ .card2{top:107%;left:23%;}
+ .button{line-height:83px;margin-top:30px;}
+ .buttonl{line-height:83px;}
+ .links{opacity:0;}
+ .menu-icon{display:block;}
+ .icon{display:none;}
+ .A .deco{display:none;}
+ .B .deco{display:none;}
+ .decoC{display:none;}
+
+ /*this partOne*/
+ .partOne{top:175%;border-top:1px dashed #000;border-bottom:1px dashed #000;}
+ .partOne .textOne{font-size:50px;width:90%;left:5%}
+ .linetext{width:90%;top:59%;}
+ 
+
+ /*this is partTwo*/
+
+ .partTwo{top:290%;}
+ .partTwo .img{width:80%;left:10%;top:5%;}
+ .textTwo{font-size:50px;left:5%;width:90%;top:50%;}
+ .partTwo .textOne{width:95%;font-size:50px;left:5%;top:90%;}
+ .deco{top:43%;left:70%;z-index:-1;}
+ .vibeS{top:90%;left:10%;}
+ .vibeL{display:none;}
+
+ /*this is partThree*/
+ .partThree{top:450%;}
+ .partThree .img{background-size:100%;background-repeat:no-repeat;width:80%;height:300px;left:10%;top:5%;}
+ .partThree .textTwo{font-size:50px;left:5%;width:90%;top:55%;}
+ .two .deco{top:47%;left:5%;z-index:-1;}
+ .three .deco{top:105%;left:40%;z-index:-1;}
+ 
+ /*this is partFour*/
+ .partFour{top:575%}
+ .partFour .textTwo{font-size:50px;left:5%;width:90%;top:0%;}
+ .textblock{font-size:40px;height:90px;line-height:105px;width:70%;top:45%;left:15%;}
+ .two .textblock{top:60%;}
+ .three .textblock{top:75%;}
+
+ /*this is partFive*/
+ .partFive{height:280%;top:675%;}
+ .partFive .textOne{font-size:50px;width:90%;left:5%;top:5%;}
+ .textcard{left:18%;top:25%;}
+ .two .textcard{left:18%;top:43%}
+ .four .textcard{left:18%;top:61%}
+ .three .textcard{left:18%;top:79%}
+ 
+
+ /*this partSix*/
+ .partSix{top:955%;}
+ .partSix .textOne{top:10%;}
+ .footer{top:55%;}
+ .two .footer{top:55%;left:45%;}
+ .partSix .deco{top:75%;z-index:-1;}
+ .partSix .vibeS{display:none;}
+ 
+ 
+ .partSix .img{left:5%;top:75%;z-index:-1;}
+
+ /*New year deco*/
+ .gift{left:5%}
+ /*New year colours are #ffd6cc and #ffc2b3*/
+ 
+}
+</style>
+</head>
+<body>
+<div class="head">
+        <div class="icon"></div>
+       <div class="title">Elle Liao</div>
+       <div class="links"><a href="about.html">About</a>    <a href="https://www.instagram.com/expressdesign102/">MyWorks</a>    <a href="exp.html">MyExperience</a>   <a href="mailto:elleliao58@outlook.com">Contact</a></div>        
+       <div class="textOne"><span class="handw">Hi there</span><br>
+                                           Creating a tiny personal space in this lovely digital world. <br>
+                                            <span class="small">Welcome to 2025! My name is Elle liao, a college student who design <span class="green">websites</span> in her free time.</span><br>
+                                             <a href="#partOne"><span class="button">Scroll down</span></a><br>
+                                             <a href="Elle2025.pdf"><span class="buttonl">Open my CV</span></a>
+                               
+      </div>
+      <div class="vibe"></div>
+      <div class="A"><div class="deco"></div></div>
+      <div class="B"><div class="deco"></div></div>
+      
+      <a href="music.html"><div class="card"></div></a>
+      <a href="gif.html"><div class="card2"></div></a>
+</div>
+<div class="partOne" id="partOne">
+        <div class="textOne"><span class="handw">Hiya<br></span><br>
+                                              I am an <span class="oran">outgoing</span>, <span class="green">friendly</span>,<span class="blue"> educated</span>, 
+                                             <span class="bro">hardworking</span> young adult thriving for every <span class="dblue">opportunity</span><br>
+                                             <a href="skills.html"><span class="button">My skills</span></a><br>
+                                             <span class="small"><a href="offer.html">Got a part time job for me?</a></span><br>
+         </div>
+         <div class="linetext"><span class="ns">#UI UX design</span> <span class="ns">#Alevel tutor</span> 
+                                            <span class="ns">#BubbleTea</span> <span class="ns">#Cashier</span>
+        </div>
+</div>
+<div class="partTwo">
+         <div class="img"></div>
+        <div class="textTwo">My experience<br>
+                                             <span class="smallp">From rock climbing to parcel sorting,  I have experienced many interesting things
+                                                                                 that empowers me as I grow up to be an adult.</span><br>
+                                              <a href="exp.html"><span class="buttonl">Read more</span></a>
+        </div>
+         <div class="vibeL"></div><div class="vibeS"></div> <div class="deco"></div>
+        <div class="textOne">I am currently a student at UCL London...<br><span class="handw">#Adventure</span></div>
+</div>
+<div class="partThree">
+         <div class="img"></div>
+         <div class="two"><div class="deco"></div></div>
+        <div class="textTwo">My works<br>
+                                             <span class="smallp">I felt in love with UI and UX design when I was 14 years old.
+                                              Here are some of my selected work collected from my old instagram account (ED102 - Annie piers).</span><br>
+                                              <a href="https://www.instagram.com/expressdesign102/">
+                                                        <span class="buttonl">See my works</span>
+                                               </a>
+        </div>
+         <div class="three"><div class="deco"></div></div>
+</div>
+<div class="partFour">
+         <div class="textTwo">My interest<br>
+                                             <span class="smallp">Learn more about what I am interested in to learn more about my personality! <br>
+                                              <span class="blue"><b>P.S my hobbies including foreign language, rock climbing, marathon and coding!</b></span></span>
+        </div>
+         <div class="textblock">
+                        Academic
+                        <div class="light"><div class="hide"><span class="buttonl">Chemistry</span>
+                                                      <span class="buttonl">Maths</span>
+                                                      <span class="buttonl">Languages</span>
+                                                       <span class="buttonl">Coding</span>
+                        </div></div>
+         </div>
+
+
+         <div class="two"><div class="textblock">
+                           Leisure
+                           <div class="light"><div class="hide"><span class="buttonl">Animation</span>
+                                                      <span class="buttonl">Hiking</span>
+                                                      <span class="buttonl">Judo and BJJ</span>
+                                                       <span class="buttonl">Rock climbing</span>
+                        </div></div>
+         </div></div>
+         <div class="three"><div class="textblock">
+                         Work preference
+                         <div class="hide"><span class="buttonl">#Educational</span>
+                                                      <span class="buttonl">#Part-time</span>
+                                                      <span class="buttonl">#Friendly</span>
+                                                       <span class="buttonl">#City center</span>
+                        </div>
+          </div></div>
+</div>
+<div class="partFive">
+          <div class="four"><div class="deco"></div></div>
+          <a href="https://www.pinterest.co.uk/pin/439171401169424271/">
+          <div class="decoC"></div>
+          </a>
+          <div class="textOne">I am happy to share what I learned from coding this website from scratch.<br>
+                                                <span class="smallp">Check out my code snippets - all 100% base on only <b>HTML and CSS</b></span>
+          </div>
+          <div class="scroll">
+          <div class="textcard"><div class="th">
+                              <span class="smallp"><span class="green">Advanced</span></span><br>
+                               100% CSS + HTML Caralose<br><a href="code/monkey.html"><span class="buttonl">Open</span></a>
+          </div></div>
+
+          <div class="two">
+                        <div class="textcard"><div class="th">
+                              <span class="smallp"><span class="green">Easy</span></span><br>
+                               Gradient background<br><a href="code2/gradient.html"><span class="buttonl">Open</span></a>
+                         </div></div>
+           </div>
+
+          <div class="three"><div class="textcard"><div class="th">
+                              <span class="smallp"><span class="green">Average</span></span><br>
+                               Dropdown menu<br><a href="code3/Dropmenu.html"><span class="buttonl">Open</span></a>
+          </div></div></div>
+
+          <div class="four"><div class="textcard"><div class="th">
+                              <span class="smallp"><span class="green">Easy</span></span><br>
+                               Outlined text<br><a href="code5/outext.html"><span class="buttonl">Open</span></a>
+          </div></div></div>
+          </div>
+</div>
+<div class="partSix">
+         <div class="vibeL"></div><div class="vibeS"></div> <div class="deco"></div>
+        <div class="textOne">
+                       <span class="handw">#SayHi</span><br>
+                       Contact me<br>
+                       <span class="smallp">If you found my work interesting, have a job for me, or want to be my friends, please drop me a line.</span><br>
+                       <a href="mailto:elleliao58@outlook.com"><span class="button">Drop me a line</span></a>
+         </div>
+         <div class="footer">About<br>
+                 <a href="about.html">About me</a><br>   <a href="https://www.instagram.com/expressdesign102">MyWorks</a><br>   <a href="exp.html">MyExperience</a><br>   <a href="mailto:elleliao58@outlook.com">Contact</a>
+         </div>     
+         <div class="two"><div class="footer">Socials<br>
+                 <a href="https://profile.indeed.com/?hl=en_GB&co=GB&from=gnav-jobseeker-profile--profile-one-frontend">Indeed</a><br>   
+                  <a href="https://www.linkedin.com/in/%E7%8E%A5-%E5%BB%96-7124b72a0/">Linkedin</a><br>   
+                  <a href="https://www.instagram.com/expressdesign102/">instagram</a><br>  
+         </div></div>  
+         
+         <div class="img">Image from rawpixel.com</div>   
+</div>
+
+ 
+<a href="#menu-content"><div class="menu-icon"></div></a>
+ <div id="menu-content">
+    <div class="textOne">
+         <a href="about.html">About</a><br>    <a href="https://www.instagram.com/expressdesign102/">MyWorks</a><br>    
+          <a href="exp.html">MyExperience</a><br>  <a href="random.html">Random number</a><br> 
+          <a href="mailto:elleliao58@outlook.com">Contact</a><br>
+          
+          <span class="green"><a href="#">Back</a></span>
+    </div>
+  
+ </div>
+
+ <a href="newyear.html"><div class="gift"></div></a>
+ <div class="gift2"><div class="gift"></div></div>
+ <div class="gift3"><div class="gift"></div></div>
+ <div class="gift4"><div class="gift"></div></div>
+ <div class="gift5"><div class="gift"></div></div>
+ 
+</body>
+</html>

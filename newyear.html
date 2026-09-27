@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MyPortfolio</title>
+<head>
+
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<meta name="theme-color" content="#ffd6cc">
+<link href="https://fonts.googlefonts.cn/css?family=Homemade+Apple|Katibeh" rel="stylesheet">
+<link href="https://fonts.googlefonts.cn/css?family=Poppins" rel="stylesheet">
+<style>
+
+
+         
+@keyframes gift{
+ 0%{top:-20%;opacity:1;}
+ 90%{opacity:1;}
+ 100%{top:120%;opacity:0;}
+}
+         
+body{background-color:#ffd6cc;}
+.head{
+         
+         height:130%;width:100%;
+         position:absolute;
+         top:0;left:0;
+}
+.title {
+          font-size:35px;
+          font-family: 'Katibeh', cursive;
+          position:absolute;
+          top:3%;
+          left:10%;
+}
+ .icon{
+         height:30px;width:30px;
+         background-image:url(leaf.png);
+         background-size:100%;background-repeat:no-repeat;
+         position:absolute;
+         top:3.5%;left:7%;
+         animation:none 1s ease;
+}
+
+.random{
+  width:80%;
+  text-align:center;
+  font-size:70px;
+  font-family: 'Katibeh', cursive;
+  position:absolute;
+  top:20%;left:10%;
+}
+
+
+button{
+     height:80px;
+     width:200px;
+     border-radius:20px;
+     border:0px solid black;
+     background-color:#5abe6a;
+    font-size:35px;
+    font-family: 'Katibeh', cursive;
+    color:#D6EDff;
+    padding-bottom:15px;
+}
+
+.text{font-size:20px;font-family:Poppins;line-height:25px;display:inline-block;}
+
+ /*New year deco*/
+ .gift{
+       height:90px;
+       width:90px;
+       background-image:url(newyear/fu.png);
+       background-size:100%;background-repeat:no-repeat;
+       position:fixed;
+        top: -20%;left:10%;
+       animation:gift 7s infinite;
+ }
+ .gift2 .gift{
+         height:50px;
+         width:50px;
+         background-image:url(newyear/red.png);
+         left:30%;
+         animation:gift 8s infinite;
+ }
+
+  .gift3 .gift{
+         height:70px;
+         width:70px;
+         background-image:url(newyear/gold.png);
+         left:50%;
+         animation:gift 9s infinite;
+ }
+   .gift4 .gift{
+         height:70px;
+         width:70px;
+         background-image:url(newyear/pao.png);
+         left:70%;
+         animation:gift 7s infinite;
+ }
+   .gift5 .gift{
+         height:50px;
+         width:50px;
+         background-image:url(newyear/red.png);
+         left:85%;
+         animation:gift 9s infinite;
+ }
+ 
+ .gift:hover{
+
+   -webkit-animation-play-state:paused;
+  -moz-animation-play-state:paused;
+  -o-animation-play-state:paused;
+  animation-play-state:paused;
+  cursor: pointer;
+  
+ }
+
+
+@media screen and (max-width:700px){
+
+.title{left:20%;top:3.9%}
+.random{width:90%;font-size:50px;left:5%;top:20%;}
+.gift{left:5%}
+
+}
+
+</style>
+</head>
+<body>
+  
+<div class="head">
+        <div class="icon"></div>
+       <div class="title">Happy New Year</div>
+
+
+<div class = "random">
+Why is this website now pink
+
+<p id="demo"> 🧧 </p>
+
+
+<span class="text">Chinese New year is a time when people decorate their home with red colored decorations that bring happiness and fortune for the following year.
+                             So this year I decide to decorate the landing page of my website as well. The other pages remain the classical blue color. Hope you like this little change!
+</span>
+
+</div>
+</div>
+
+ <div class="gift"></div>
+ <div class="gift2"><div class="gift"></div></div>
+ <div class="gift3"><div class="gift"></div></div>
+ <div class="gift4"><div class="gift"></div></div>
+ <div class="gift5"><div class="gift"></div></div>
+    
+
+</body>
+</html>

@@ -1,0 +1,278 @@
+<html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MyPortfolio</title>
+<head>
+<meta name="theme-color" content="#D6EDFF">
+<link href="https://fonts.googlefonts.cn/css?family=Homemade+Apple|Katibeh" rel="stylesheet">
+<link href="https://fonts.googlefonts.cn/css?family=Poppins" rel="stylesheet">
+<style>
+body{background-color:#D6EDFF;}
+.title {
+          font-size:35px;
+          font-family: 'Katibeh', cursive;
+          position:absolute;
+          top:3%;
+          left:5%;
+}
+.links {
+          font-size:15px;
+          font-family:;
+          word-spacing:30px;
+          position:absolute;
+          top:5%;
+          right:5%;
+}
+.links a{color:#000;text-decoration:none;}
+.textOne{
+         width:40%;
+        font-size:70px;
+        text-align:center;
+        font-family: 'Katibeh', cursive;
+        position:absolute;
+        top:23%;left:30%;
+}
+.handw{font-size:30px;color:#5ABE6A;font-family: 'Homemade Apple', cursive;line-height:15px;}
+.card{
+        width:30%;
+       background-color:rgba(255,255,255,0.3);
+       border:1px dotted #5ABE6A;
+       border-radius:20px;
+       position:absolute;
+       top:75%;left:10%;
+       animation:no 2s ease;
+       padding:50px;
+       padding-right:50px;
+}
+.two .card{background-color:#5ABE6A;color:#D6EDFF;left:53%}
+.three .card{background-color:#FF8B49;color:#D6EDFF;top:215%;border:0px dotted #5ABE6A;}
+.four .card{background-color:#FFFFCC;left:53%;top:215%;border:0px dotted #5ABE6A;}
+.cardText{
+             font-size:50px;
+             font-family: 'Katibeh', cursive;
+}
+.smallp{font-size:19px;font-family: 'Poppins', sans-serif;display:inline-block;margin-top:20px;}
+.smallt{font-size:15px;font-family: 'Poppins', sans-serif;display:inline-block;margin-top:20px;}
+
+.partSix{
+              height:110%;
+              width:100%;
+              position:absolute;
+              top:320%;
+              left:0;
+}
+.footer{
+            font-size:30px;
+            font-family: 'Katibeh', cursive;
+            position:absolute;
+            top:75%;left:10%;
+}
+.two .footer{left:25%;}
+.footer a{font-size:19px;font-family:ara;text-decoration:none;color:#000;}
+.img{
+       height:360px;width:300px;
+       background-image:url(work.png);
+       background-size:100%;background-repeat:no-repeat;
+       border-radius:10px;
+       border:5px solid white;
+       box-shadow: 10px 10px 10px rgba(0,0,0,0.1);
+       position:absolute;
+       top:10%;left:10%;
+       animation:no 2s ease;
+}
+.partSix .img{
+               height:400px;
+               background-image:url(top.png);
+               border:0px solid #333;
+               box-shadow:0px 0px 0px #333;
+               left:75%;top:70%;
+               color:transparent;
+}
+.vibe{
+         height:90px;width:90px;
+         border-radius:100%;
+         background-image:linear-gradient(#feb661, rgba(255,255,255,0));
+         position:absolute;
+        top:15%;left:60%;
+}
+.vibeL{
+         height:125px;width:125px;
+         border-radius:100%;
+         background-image:linear-gradient(#61fe71, rgba(255,255,255,0));
+         position:absolute;
+        top:67%;left:35%;
+}
+.vibeS{
+         height:30px;width:30px;
+         border-radius:100%;
+         background-color:#feb661;
+         position:absolute;
+        top:87%;left:60%;
+}
+.deco{
+         height:90px;width:90px;
+         background-image:url(deco/deco1.svg);
+         background-size:100%;background-repeat:no-repeat;
+         position:absolute;
+         top:55%;left:60%;
+         animation:none 1s ease;
+}
+.button{
+             height:70px;
+             width:200px;
+             border-radius:20px;
+             background-color:#5abe6a;
+             display:inline-block;
+             font-size:33px;
+             line-height:55px;
+             color:#D6EDFF;
+             margin-top:40px;
+}
+ .menu-icon{
+            height:40px;
+            width:40px;
+            background-image:url(leaf.png);
+            background-size:100%;
+            position:fixed;
+            top:3%;right:5%;
+            display:none;
+ }
+ #menu-content{
+            height:100%;
+            width:100%;
+            background-color:#D6EDFF;
+            position:fixed;
+            top:0%left:0%;
+            display:none;
+ }
+ #menu-content:target{display:block;}
+ #menu-content .textOne{top:30%;}
+.textOne a{color:#000;text-decoration:none;}
+          
+             
+@media screen and (max-width:700px){
+ /*this head*/
+ .handw{font-size:30px;display:inline-block;margin-bottom:35px;}
+ .vibe{z-index:-1;top:12%;}
+ .textOne{width:90%;font-size:50px;left:5%;top:22%;}
+ .small{margin-top:20px;}
+ .button{line-height:83px;margin-top:30px;}
+ .buttonl{line-height:83px;}
+ .links{opacity:0;}
+ .menu-icon{display:block;}
+
+/*card*/
+
+.card{top:65%;left:7%;width:70%;padding:30px;padding-left:30px;} 
+.two .card{top:190%;left:7%;}
+.three .card{top:315%;left:7%;} 
+.four .card{top:420%;left:7%;} 
+.smallt{margin-top:-15px;margin-bottom:25px;}
+
+.smallp{margin-top:-15px;margin-bottom:25px;}
+ 
+ 
+
+ /*this partSix*/
+ .partSix{top:500%;}
+ .partSix .textOne{top:10%;}
+ .footer{top:55%;}
+ .two .footer{top:55%;left:45%;}
+ .partSix .deco{top:75%;z-index:-1;}
+ .partSix .vibeS{display:none;}
+ 
+ 
+ .partSix .img{left:5%;top:75%;z-index:-1;}
+}         
+</style>
+</head>
+<body>
+<div class="title">Elle Liao</div>
+<div class="links"><a href="about.html">About</a>    <a href="https://www.instagram.com/expressdesign102/">MyWorks</a>    <a href="exp.html">MyExperience</a>   <a href="mailto:elleliao58@outlook.com">Contact</a></div>    
+<div class="textOne">
+              <span class="handw">Have a look at</span><br>
+               My Skills<br>
+              <span class="smallp">Looking for a tutor/designer/cashier? I might have the right skillset for your hiring!
+                                                    I am comfortable both working online and inperson.</span>
+</div>
+<div class="card">
+        <div class="cardText">
+                                              Academics<br><span class="smallt">It is my desire to be a personal tutor. Having score <b>A*A*A in Alevel and 7.5 in IELTS</b>, I am confident to guide
+                                              learners starting from all levels.
+                                              </span><br>
+                                              Maths<br><span class="smallp">I scored A* in Alevel mathematics exam.</span><br>
+                                              Chemistry<br><span class="smallp">I scored A* in Alevel Chemistry</span><br>
+                                              English<br><span class="smallp">IELTS 7.5 (Listening 9 Reading 9)</span><br>
+                                              Chinese<br><span class="smallp">Native speaker. I will merge my own expereince of learning a second language into my teaching.</span><br>
+                                              
+                    
+        </div>
+</div>
+<div class="two"><div class="card">
+                <div class="cardText">
+                                              UI UX<br><span class="smallt">I felt in love with digital creativity when I was 14 years old and I coded my first family website
+                                              the same year. Now it has became my daily to collect inspiration from dribbble and awwwards, and implement my new design through
+                                              coding.
+                                              </span><br>
+                                              Figma<br><span class="smallp">Fluent figma skills</span><br>
+                                              HTML<br><span class="smallp">This website is hand coded by me</span><br>
+                                              CSS<br><span class="smallp">I am fluent in both HTML and CSS. I know how to implement complex effect (e.g slideshow,
+                                              filter, scroll down button) without heavy javascript code.</span><br>
+                                              
+                    
+        </div>            
+</div></div>
+<div class="three"><div class="card">
+                <div class="cardText">
+                                              General<br><span class="smallt">I got some practical skills that make me your perfect student worker.
+                                              </span><br>
+                                              Scooter riding<br><span class="smallp">I am a good scooter rider who used to ride 10km to school. Contact me
+                                                                              if you are looking for a delivery person.</span><br>
+                                              Communication<br><span class="smallp">I am friendly and outgoing.</span><br>
+                                              Organised<br><span class="smallp">I will find a good balance of my study and work.</span><br>
+                                              
+                    
+        </div>            
+</div></div>
+<div class="four"><div class="card">
+                <div class="cardText">
+                                              Bonus<br><span class="smallt">Skill that many employer don't expect college student to have
+                                              </span><br>
+                                              Knitting<br><span class="smallp">I know how to knit hat, beanie and jumpers.</span><br>
+                                              Real estate<br><span class="smallp">I have lived in many different parts of london, I am familiar with 
+                                              the commute system and passionate about jobs related with real estate</span><br>
+                                              
+                                              
+                    
+        </div>            
+</div></div>
+
+<div class="partSix">
+         <div class="vibeL"></div><div class="vibeS"></div> <div class="deco"></div>
+        <div class="textOne">
+                       <span class="handw">#SayHi</span><br>
+                       Contact me<br>
+                       <span class="smallp">If you found my work interesting, have a job for me, or want to be my friends, please drop me a line.</span><br>
+                       <a href="mailto:elleliao58@outlook.com"><span class="button">Drop me a line</span></a>
+         </div>
+         <div class="footer">About<br>
+                 <a href="about.html">About me</a><br>   <a href="https://www.instagram.com/expressdesign102">MyWorks</a><br>   <a href="exp.html">MyExperience</a><br>   <a href="mailto:elleliao58@outlook.com">Contact</a>
+         </div>     
+         <div class="two"><div class="footer">Socials<br>
+                 <a href="https://profile.indeed.com/?hl=en_GB&co=GB&from=gnav-jobseeker-profile--profile-one-frontend">Indeed</a><br>   
+                  <a href="https://www.linkedin.com/in/%E7%8E%A5-%E5%BB%96-7124b72a0/">Linkedin</a><br>   
+                  <a href="https://www.instagram.com/expressdesign102/">instagram</a><br>  
+         </div></div>  
+         <div class="img">Image from rawpixel.com</div>   
+</div>
+          
+<a href="#menu-content"><div class="menu-icon"></div></a>
+ <div id="menu-content">
+    <div class="textOne">
+         <a href="about.html">About</a><br>    <a href="https://www.instagram.com/expressdesign102/">MyWorks</a><br>    
+          <a href="exp.html">MyExperience</a><br>   <a href="mailto:elleliao58@outlook.com">Contact</a><br>
+          <span class="green"><a href="#">Back</a></span>
+    </div>
+  
+ </div>
+</body>

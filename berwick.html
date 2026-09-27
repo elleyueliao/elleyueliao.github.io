@@ -1,0 +1,432 @@
+<html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MyPortfolio</title>
+<head>
+<meta name="theme-color" content="#D6EDFF">
+<link href="https://fonts.googlefonts.cn/css?family=Homemade+Apple|Katibeh" rel="stylesheet">
+<link href="https://fonts.googlefonts.cn/css?family=Poppins" rel="stylesheet">
+<style>
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body{background-color:#D6EDFF;}
+
+a{color:#000;}
+
+.head{
+        background-color:#2C684B;
+         height:130%;width:100%;
+         position:absolute;
+         top:0;left:0;
+        z-index:2;
+}
+.partOne{
+         height:130%;width:100%;
+         font-size:19px;
+         font-family: 'Poppins', sans-serif;
+          display:inline-block;
+         position:absolute;
+         top:130%;left:0;
+}
+.partTwo{
+       
+         height:130%;width:100%;
+         font-size:19px;
+         font-family: 'Poppins', sans-serif;
+          display:inline-block;
+         position:absolute;
+         top:400%;left:0;
+}
+.partThree{
+         height:130%;width:100%;
+         font-size:19px;
+         font-family: 'Poppins', sans-serif;
+          display:inline-block;
+         position:absolute;
+         top:700%;left:0;
+}
+.partFour{
+         height:130%;width:100%;
+         font-size:19px;
+         font-family: 'Poppins', sans-serif;
+          display:inline-block;
+         position:absolute;
+         top:950%;left:0;
+}
+.title {
+          color:#D6EDFF;
+          font-size:35px;
+          font-family: 'Katibeh', cursive;
+          position:absolute;
+          top:3%;
+          left:5%;
+}
+.links {
+          color:#D6EDFF;
+          font-size:15px;
+          font-family:;
+          word-spacing:30px;
+          position:absolute;
+          top:5%;
+          right:5%;
+}
+.links a{color:#D6EDFF;text-decoration:none;}
+.textOne{
+         color:#D6EDFF;
+         width:40%;
+        font-size:70px;
+        
+        font-family: 'Katibeh', cursive;
+        position:absolute;
+        top:20%;left:10%;
+}
+.partOne .textOne{width:80%;color:#000;top:5%;}
+.partThree .textOne{width:80%;color:#000;top:5%;}
+.partTwo .textOne{width:80%;color:#000;top:5%;}
+.partFour .textOne{color:#000;text-align:center;left:30%}
+
+.handw{font-size:30px;color:#5ABE6A;font-family: 'Homemade Apple', cursive;line-height:15px;}
+.partTwo .handw{line-height:60px;}
+.small{font-size:30px;display:inline-block;margin-top:40px;}
+.smallp{font-size:19px;font-family: 'Poppins', sans-serif;display:inline-block;margin-top:20px;}
+.mark{display:inline-block;margin-top:100px;}
+.tiny{font-size:11px;font-family: 'Poppins', sans-serif;}
+.small a{text-decoration:none;color:#000;}
+
+/*color*/
+.green{color:#5ABE6A;}
+.oran{color:#FF8B49}
+.blue{color:#2C684B}
+.bro{color:#BE8B5C}
+.dblue{color:#292368}
+/*color*/
+.linetext{
+         width:90%;
+        font-size:50px;
+        text-align:center;
+        font-family: 'Katibeh', cursive;
+        color:rgba(0,0,0,0);
+        -webkit-text-stroke: 1px #5ABE6A;
+        word-spacing:50px;
+        position:absolute;
+        top:80%;left:5%;
+        animation:none 1s ease;
+}
+.ns{word-spacing:10px;}
+
+.ns:hover{color: #5ABE6A;-webkit-text-stroke: 0px #5ABE6A;}
+
+.button{
+             height:70px;
+             width:200px;
+             border-radius:20px;
+             background-color:#5abe6a;
+             display:inline-block;
+             font-size:33px;
+             line-height:55px;
+             color:#D6EDFF;
+             margin-top:40px;
+}
+.buttonl{
+             height:70px;
+             width:200px;
+             border:1px dashed #D6EDFF;
+             font-family: 'Katibeh', cursive;
+             border-radius:20px;
+             background-color:;
+             display:inline-block;
+             font-size:30px;
+             line-height:55px;
+             color:#5ABE6A;
+             text-align:center;
+             margin-top:20px;
+}
+
+.img{
+       height:360px;width:300px;
+       background-image:url(upnorth.jpg);
+       background-size:100%;background-repeat:no-repeat;
+       border-radius:10px;
+       position:absolute;
+       top:20%;right:10%;
+       animation:no 2s ease;
+}
+img{border-radius:20px;}
+.partThree img{width:90%;}
+
+.selector{
+            background-color:#D6EDFF;
+            height:100px;
+            width:100%;
+          border-radius:10px;
+          border-top:1px solid #000;
+           position:fixed;
+            bottom:0%;right:0%;
+            
+}
+.selector-holder{position:absolute;left:10%}
+.selector .buttonl{color:#000;border: 1px dashed #000;}
+
+.footer{
+            font-size:30px;
+            font-family: 'Katibeh', cursive;
+            position:absolute;
+            top:75%;left:10%;
+}
+.two .footer{left:25%;}
+.footer a{font-size:19px;font-family:ara;text-decoration:none;color:#000;}
+.vibe{
+         height:90px;width:90px;
+         border-radius:100%;
+         background-image:linear-gradient(#feb661, rgba(255,255,255,0));
+         position:absolute;
+        top:25%;left:60%;
+}
+.vibeL{
+         height:125px;width:125px;
+         border-radius:100%;
+         background-image:linear-gradient(#61fe71, rgba(255,255,255,0));
+         position:absolute;
+        top:67%;left:35%;
+}
+.vibeS{
+         height:30px;width:30px;
+         border-radius:100%;
+         background-color:#feb661;
+         position:absolute;
+        top:87%;left:60%;
+}
+.deco{
+         height:90px;width:90px;
+         background-image:url(deco/deco1.svg);
+         background-size:100%;background-repeat:no-repeat;
+         position:absolute;
+         top:100%;left:60%;
+         animation:none 1s ease;
+}
+.footer-img{
+       height:400px;width:300px;
+       background-image:url(top.png);
+       background-size:100%;background-repeat:no-repeat;
+       border-radius:10px;
+       position:absolute;
+       top:70%;left:75%;
+       color:transparent;
+}
+.textOne a{color:#000;text-decoration:none;}
+ .menu-icon{
+            height:40px;
+            width:40px;
+            background-image:url(leaf-light.png);
+            background-size:100%;
+            position:fixed;
+            display:none;
+            top:3%;right:5%;
+            
+ }
+ #menu-content{
+            height:100%;
+            width:100%;
+            background-color:#D6EDFF;
+            position:fixed;
+            top:0%left:0%;
+            display:none;
+            z-index:3;
+ }
+ #menu-content:target{display:block;}
+ #menu-content .textOne{top:30%;}
+ 
+             
+@media screen and (max-width:700px){
+ /*this head*/
+  
+ .handw{font-size:30px;display:inline-block;margin-bottom:35px;}
+ .vibe{z-index:-1;top:12%;}
+ .textOne{width:90%;font-size:60px;left:5%;top:12%;}
+ .small{margin-top:20px;}
+  .mark{margin-top:50px;}
+ .card{top:75%;left:23%;} 
+ .card2{top:107%;left:23%;border:1px dashed #000}
+ .button{line-height:83px;margin-top:30px;}
+ .buttonl{line-height:83px;}
+ .links{opacity:0;}
+ .menu-icon{display:block;z-index:3;}
+  .head .img{top:80%;left:0;height:420px;width:100%;}
+  .head .smallp{font-size:20px;}
+
+  /*general image setting*/
+  img{margin-top:90px;}
+
+  /*this is partOne*/
+  .partOne{top:169%;}
+  .partOne img{width:100%;margin-top:-30px;}
+  .partOne .textOne{width:90%;}
+  .textOne .smallp{font-size:15px;}
+
+   /*this is partTwo*/
+  .partTwo{top:345%;}
+  .partTwo img{width:100%;}
+  .partTwo .textOne{width:90%;}
+
+   /*this is partThree*/
+  .partThree{top:560%;}
+  .partThree img{width:100%;}
+  .partThree .textOne{width:90%;}
+
+
+
+ /*this partFour*/
+ .partFour{top:720%;}
+  .partFour .handw{color:#5ABE6A;}
+ .partFour .textOne{top:10%;left:5%}
+ .footer{top:55%;}
+ .two .footer{top:55%;left:45%;}
+ .partFour .deco{top:75%;z-index:-1;}
+ .partfour .vibeS{display:none;}
+ 
+ 
+ .partFour .footer-img{left:5%;top:75%;z-index:-1;}
+
+/*the hidden selector*/
+  .selector{display:none;}
+
+  .head .smallp{font-size:20px;}
+  .partFour .smallp{font-size:20px;}
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="head">
+       <div class="title">Elle Liao</div>
+        <div class="links"><a href="about.html">About</a>    <a href="https://www.instagram.com/expressdesign102">MyWorks</a>    <a href="exp.html">MyExperience</a>   <a href="mailto:elleliao58@outlook.com">Contact</a></div> 
+       <div class="textOne"><span class="handw">2 years</span><br>
+                                           Berwick upon tweed<br>
+                                            <span class="smallp">I moved to the Northumberland to study at the Longridge tower school when I was 12 years old.
+                                                                                I learned much more than academic knowledges and became someone who truly 
+                                                                                love and respect the nature. <br>
+                                                                                
+                                             </span><br>
+                                             <a href="#partOne"><span class="buttonl">Scroll down</span></a><br>
+                                             <span class="mark">
+                                             <span class="tiny">*My old phone was stolen near the southbank last year in London. Some of the picture in this article
+                                                                                   is downloaded from other sources. I have checked them to make sure
+                                                                                   they look the same as the Berwick in my impression. Thank you for understanding.
+                                             </span></span>
+                                             
+                               
+      </div>
+      <div class="vibe"></div>
+      <div class="img"></div>
+</div>
+<div class="partOne" id="partOne">
+      <div class="textOne">School forrest<span class="smallp">
+        There is actually a forrest in the campus of longridge tower school.<br><br>
+       
+          <b>Trees</b><br>
+         The forrest is surrounded by pine trees and yews, inside there are elms, birch and alders. The holly trees stand by the tiny paths, the spruge laurels
+          guard the playground and the crab apples decorate the tennis court.<br><br>
+          <b>Animals</b><br>
+          Seagulls, doves and foxes are common guests of our forrest. Pheasants and deers come to visit us too. One of my favourite activity is to search for pheasant
+         feathers and preserve them according to way my art teacher taught me.<br><br>
+          <b>Mushroom</b><br>
+          Mushroom and puff-ball inhabits the floor of the woods and make the air smells damp but healthy in the morning after rain.<br><br>
+          <b>Flowers</b><br>
+          Daffodil and snowdrops come in early spring, elder flower and other members of the carrot family takes over in the summer. Nettle is what we use to sting each other
+          with as naughty boarders. Thistle, the national flower of scotland, is presented from early spring to Autumn, but I believe it is most robust in July or August.<br><br>
+          <b>Boarders</b></br>
+          We went down to the forrest every evening from the boarding house to play, to run, and to forage for butter cups and wild berries in their harvest season.
+          We escaped from the school through the rare of the forest once and picked some wool from a nearby farm (sorry...)</span><br><br>
+         <img src="tower.jpg"><br>
+        <span class="tiny">https://www.independentschoolsyearbook.co.uk/profiles<br>/1829/longridge-towers-school</span>
+         </div>
+</div>
+<div class="partTwo" id="partTwo">
+      <div class="textOne">The town<span class="smallp">
+        After moving out of the boarding house, I stayed at a tiny flat behind the town hall and discovered so many beautiful places around Berwick-upon-tweed.<br><br>
+        
+          <b>Castle and the ramparts</b><br>
+         Best place to go for a refreshing run or relaxing walk after a stressful day would be the rampart. It is a bit like walking on an acient wall covered in lively grass
+          all year around. The rampart will take you all the way to the cliffs by the sea and the Magdalene golf club where you can play golf at a price you never imagined in London.<br><br>
+        
+          <b>The light house</b><br>
+          Around ten minutes walk along the back street from my flat I would arrive at the light house where I can see the spital beaches across the bay.
+          While the light house provided us a sense of security, the wind was strong and harsh in the winter and remind us of the power of the nature. <br><br>
+          
+          <b>The bridges and river</b><br>
+         Berwick is probably most famous for the royal border bridge that over looks the tweed river, it is the bridge that I will cross whenever I travel back to Berwick town
+         by the train. There are 3 bridges in the town center, the other 2 are A1167 and the old bridge. I never got to known the real name of A1167, eventhough it
+         is the one I cross through the most time. I cross it to go shopping at the tesco, to go to the garden centre and to join my gmnastic classes. It is a wide and modern bridge
+         that gives a great view of the entire town.<br><br>
+         The riverside is a great place to unwind, just the over-passionate common gorse might be abit overwhelming at first.<br><br>
+          <b>The garden center</b><br>
+          The Berwick garden center is packed with plants, tools, art works, handmade-soap and the fresh breezes of the spring. You can enjoy a soothing afternoon there under the sun
+          and begin a conversion with friendly local people. Speciality Nothumberland and scottish meals are cartered there every weekend. </span><br>
+          <img src="border.jpg"><br>
+        <span class="tiny">This picture is posted by<a href="https://pixabay.com/zh/users/emphyrio-10920769/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5914320">Pete</a>on<a href="https://pixabay.com/zh//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5914320">Pixabay</a></span><br><br>
+          
+         </div>
+</div>
+<div class="partThree" id="partThree">
+      <div class="textOne">My art teacher<span class="smallp">
+        My art teacher - Mrs Mccorquodale- is one of the most important people to me during my time at Berwick. <br><br>
+        
+          Growing up in the beauty of the scottish borders, she knowns the splendid nature well and taught me how to identify animal tracks, illustrate
+         watercolor bird eggs and paint the sea. She inspired me to read the Old paths and A Sand County Almanac, and to keep a natural diary myself.<br><br>
+        
+          Mrs Mccorquodale ran an art workshop every afternoon and evening for all students despite of their age or ability. She taught me how to acquire painting skills through learning from
+          other artists' master piece and told me about David hockney. She also taught me how to knit and sew, and introduce me to the art of patchwork.<br><br>
+          
+          When not teachng at the school, Mrs Mccorquodale is an experienced rider who can ide ride all the way to Newcastle or Edinburgh and back during weekends 
+          (she is graduated from the Edinburgh university). She also sell her
+          <a href="http://lizziemccorquodale.net/">sea paintings</a> online and was generous about teaching her students her signature sea-painting techniques.<br><br>
+          <img src="sea.jfif"><br><br>
+          <b> I got so much more to share about Berwick - so much more than I can write on this page </b><br>
+            Visit <a href="https://www.nwt.org.uk/wildlife-explorer/">The northumberland wildlife trust</a> and <a href="https://www.visitberwick.com/"> Visit berwick</a> for more.
+          
+         </div>
+</div>
+<div class="partFour">
+         <div class="vibeL"></div><div class="vibeS"></div> <div class="deco"></div>
+        <div class="textOne">
+                       <span class="handw">#SayHi</span><br>
+                       Contact me<br>
+                       <span class="smallp">If you found my work interesting, have a job for me, or want to be my friends, please drop me a line.</span><br>
+                       <a href="mailto:elleliao58@outlook.com"><span class="button">Drop me a line</span></a>
+         </div>
+         <div class="footer">About<br>
+                 <a href="about.html">About me</a><br>   <a href="https://www.instagram.com/expressdesign102">MyWorks</a><br>   <a href="exp.html">MyExperience</a><br>   <a href="mailto:elleliao58@outlook.com">Contact</a>
+         </div>     
+         <div class="two"><div class="footer">Socials<br>
+                 <a href="https://profile.indeed.com/?hl=en_GB&co=GB&from=gnav-jobseeker-profile--profile-one-frontend">Indeed</a><br>   
+                  <a href="https://www.linkedin.com/in/%E7%8E%A5-%E5%BB%96-7124b72a0/">Linkedin</a><br>   
+                  <a href="https://www.instagram.com/expressdesign102/">instagram</a><br>  
+         </div></div>  
+         <div class="footer-img">Image from rawpixel.com</div>   
+</div>
+</body>
+<div class="selector">
+       <div class="selector-holder">
+          <a href="#partOne"><span class="buttonl">School forrest</span></a>  <a href="#partTwo"><span class="buttonl">The town</span></a>
+           <a href="#partThree"><span class="buttonl">My art teacher</span></a>
+       </div>
+</div>
+
+<a href="#menu-content"><div class="menu-icon"></div></a>
+ <div id="menu-content">
+    <div class="textOne">
+         <a href="/2023/about.html">About</a><br>    <a href="https://www.instagram.com/expressdesign102/">MyWorks</a><br>    
+          <a href="/2023/exp.html">MyExperience</a><br>   <a href="mailto:elleliao58@outlook.com">Contact</a><br>
+          <span class="green"><a href="#">Back</a></span>
+    </div>
+  
+ </div>
+</body>
+</html>

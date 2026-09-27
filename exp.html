@@ -1,0 +1,387 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MyPortfolio</title>
+<head>
+<meta name="theme-color" content="#D6EDFF">
+<link href="https://fonts.googlefonts.cn/css?family=Homemade+Apple|Katibeh" rel="stylesheet">
+<link href="https://fonts.googlefonts.cn/css?family=Poppins" rel="stylesheet">
+
+<style>
+html {
+  scroll-behavior: smooth;
+}
+
+ @keyframes up {
+  0% {
+    top:65%;opacity:1;
+  }
+
+  100% {
+   top:10%;opacity:0;
+  }
+}
+@keyframes appear{
+0%{opacity:0;}
+100%{opacity:1;}
+}
+
+body{background-color:#D6EDFF;}
+.head{
+         
+         height:100%;width:100%;
+         position:absolute;
+         top:0;left:0;
+}
+.partOne{
+         height:130%;width:100%;
+         position:absolute;
+         top:100%;left:0;
+}
+.partTwo{
+         height:130%;width:100%;
+         position:absolute;
+         top:280%;left:0;
+}
+.partThree{
+              height:110%;
+              width:100%;
+              position:absolute;
+              top:435%;
+              left:0;
+}
+.title {
+          font-size:35px;
+          font-family: 'Katibeh', cursive;
+          position:absolute;
+          top:3%;
+          left:5%;
+}
+.links {
+          font-size:15px;
+          font-family:;
+          word-spacing:30px;
+          position:absolute;
+          top:5%;
+          right:5%;
+}
+.links a{color:#000;text-decoration:none;}
+.textOne{
+         width:40%;
+        font-size:70px;
+        text-align:center;
+        font-family: 'Katibeh', cursive;
+        position:absolute;
+        top:35%;left:30%;
+}
+.handw{font-size:30px;color:#5ABE6A;font-family: 'Homemade Apple', cursive;line-height:15px;}
+.partTwo .handw{line-height:60px;}
+.small{font-size:30px;display:inline-block;margin-top:40px;}
+.smallp{font-size:19px;font-family: 'Poppins', sans-serif;display:inline-block;margin-top:20px;}
+.smallp a{text-decoration:none;color:#000;}
+.button{
+             height:70px;
+             width:200px;
+             border-radius:20px;
+             background-color:#5abe6a;
+             display:inline-block;
+             font-size:33px;
+             line-height:55px;
+             color:#D6EDFF;
+             margin-top:40px;
+}
+.buttonlB{
+             height:60px;
+             width:150px;
+             border:1px dashed #D6EDFF;
+             border-radius:20px;
+             background-color:;
+             display:inline-block;
+             font-size:29px;
+             line-height:55px;
+             color:#D6EDFF;
+             margin-top:20px;
+}
+.buttonl{
+             height:60px;
+             width:150px;
+             border:1px dashed #000;
+             border-radius:20px;
+             background-color:;
+             display:inline-block;
+             font-size:29px;
+             line-height:55px;
+             color:#000;
+             margin-top:20px;
+}
+          
+/*hidden*/
+.vibe{
+         height:20px;width:20px;
+         border-radius:100%;
+         background-color:#feb661;
+         position:absolute;
+        top:65%;left:10%;
+        animation:up 2s ease;
+        display:none;
+}
+/*hidden*/
+.linetext{
+         width:90%;
+        font-size:150px;
+        text-align:center;
+        font-family: 'Katibeh', cursive;
+        color:rgba(0,0,0,0);
+        -webkit-text-stroke: 1px #5ABE6A;-webkit-text-stroke: 1px #000;
+        word-spacing:50px;
+        position:absolute;
+        top:0%;left:5%;
+        animation:none 1s ease;
+}
+.cardL{
+         height:30%;
+         width:32%;
+         border-radius:25px;
+         background-color:#5ABE6A;
+          font-size:70px;
+          color:#D6EDFF;
+        text-align:center;
+        font-family: 'Katibeh', cursive;
+         position:absolute;
+         top:39%;left:15%;
+         padding-top:80px;
+}
+.cardL:hover .img{display:block;animation:appear 1s ease;}
+
+.cardL .handw,.cardR .handw{font-size:19px;color:#8DE49B;}
+.cardR{
+         height:30%;
+         width:32%;
+         border-radius:25px;
+         background-color:#2C684B;
+          font-size:70px;
+          color:#D6EDFF;
+        text-align:center;
+        font-family: 'Katibeh', cursive;
+         position:absolute;
+         top:39%;right:15%;
+          padding-top:80px;
+}
+.cardR:hover .img2{display:block;animation:appear 1s ease;}
+.two .cardR{background-color:#FF8B49;top:90%;}
+.two .cardL{background-color:#BE8B5C;top:90%;}
+.three .cardR{background-color:#FF8B49;top:90%;}
+.three .cardL{background-color:#BE8B5C;top:90%;}
+.img{
+       height:100%;width:100%;
+       background-image:url(london.jpg);
+       border-radius:25px;
+       background-size:100%;background-repeat:no-repeat;
+       position:absolute;
+       top:0%;left:0%;
+       display:none;
+}
+.two .img{background-image:url(travel.jpg)}
+.two .img2{background-image:url(europe.jpg);background-position:0% 90%;}
+
+.img2{
+       height:100%;width:100%;
+       background-image:url(upnorth.jpg);
+       border-radius:25px;
+       background-size:130%;background-repeat:no-repeat;
+       position:absolute;
+       top:0%;left:0%;
+       display:none;
+}
+
+.three .img{background-image:url(teach.jpg);background-size:150%;background-position:50% 0%}
+.three .img2{background-image:url(parcel.jpg)}
+.four .img{background-image:url(wait.jpg);background-position:0% 50%}
+.four .img2{background-image:url(flora.jpg)}
+
+.footer{
+            font-size:30px;
+            font-family: 'Katibeh', cursive;
+            position:absolute;
+            top:75%;left:10%;
+}
+.two .footer{left:25%;}
+.footer a{font-size:19px;font-family:ara;text-decoration:none;color:#000;}
+.vibe{
+         height:90px;width:90px;
+         border-radius:100%;
+         background-image:linear-gradient(#feb661, rgba(255,255,255,0));
+         position:absolute;
+        top:25%;left:60%;
+}
+.vibeL{
+         height:125px;width:125px;
+         border-radius:100%;
+         background-image:linear-gradient(#61fe71, rgba(255,255,255,0));
+         position:absolute;
+        top:67%;left:35%;
+}
+.vibeS{
+         height:30px;width:30px;
+         border-radius:100%;
+         background-color:#feb661;
+         position:absolute;
+        top:87%;left:60%;
+}
+.deco{
+         height:90px;width:90px;
+         background-image:url(deco/deco1.svg);
+         background-size:100%;background-repeat:no-repeat;
+         position:absolute;
+         top:100%;left:60%;
+         animation:none 1s ease;
+}
+.footer-img{
+       height:400px;width:300px;
+       background-image:url(top.png);
+       background-size:100%;background-repeat:no-repeat;
+       border-radius:10px;
+       position:absolute;
+       top:70%;left:75%;
+       color:transparent;
+}
+.menu-icon{
+            height:40px;
+            width:40px;
+            background-image:url(leaf.png);
+            background-size:100%;
+            position:fixed;
+            top:3%;right:5%;
+            display:none;
+ }
+ #menu-content{
+            height:100%;
+            width:100%;
+            background-color:#D6EDFF;
+            position:fixed;
+            top:0%left:0%;
+            display:none;
+ }
+ #menu-content:target{display:block;}
+ #menu-content .textOne{top:30%;}
+.textOne a{color:#000;text-decoration:none;}
+             
+@media screen and (max-width:700px){
+  
+  .handw{font-size:30px;display:inline-block;margin-bottom:35px;}
+ .vibe{z-index:-1;top:12%;}
+ .textOne{width:90%;font-size:60px;left:5%;top:22%;}
+.button{line-height:83px;margin-top:30px;}
+ .buttonl{line-height:83px;}
+ .links{opacity:0;}
+ .menu-icon{display:block;}
+
+  /*this is partOne*/
+  .partOne{top:70%;}
+  .cardL{top:20%;left:5%;width:90%;}
+  .cardR{top:65%;left:5%;width:90%;}
+  .two .cardL{top:112%;left:5%;width:90%;}
+  .two .cardR{top:157%;left:5%;width:90%;}
+  .buttonlB{line-height:70px;}
+
+  /*this is partTwo*/
+  .partTwo{top:350%;}
+  .three .cardL{top:20%;left:5%;width:90%;}
+  .three .cardR{top:65%;left:5%;width:90%;}
+  .four .cardL{top:112%;left:5%;width:90%;}
+  .four .cardR{top:157%;left:5%;width:90%;}
+
+
+  
+  /*this is partThree*/
+  .partThree{top:600%;}
+  .two .footer{left:45%;z-index:2;}
+
+   .footer-img{left:5%;top:75%;z-index:-1;}
+
+}
+</style>
+</head>
+<body>
+<div class="head">
+       <div class="title">Elle Liao</div>
+        <div class="links"><a href="about.html">About</a>    <a href="https://www.instagram.com/expressdesign102/">MyWorks</a>    <a href="exp.html">MyExperience</a>   <a href="mailto:elleliao58@outlook.com">Contact</a></div>       
+       <div class="textOne"><span class="handw">Spotlight</span><br>
+                                           Experience<br>
+                                           <span class="smallp">Interesting <a href="">life</a> and <a href="">work</a> experience that bring spotlight to my life.</span><br>
+                                             <a href="#partOne"><span class="button">Learn more</span></a><br>
+                                             
+                               
+      </div>
+      <div class="vibe"></div>
+      
+     
+</div>
+<div class="partOne" id="partOne">
+       <div class="linetext">Life</div>
+        <div class="cardL">
+                       <span class="handw">2 Years</span><br>London<br><span class="buttonlB">Learn more</span>
+                       <a href="london/london.html"><div class="img"></div></a>
+        </div>
+        
+        <div class="cardR">
+                       <span class="handw">2 Years</span><br>Up North<br><a href="#partOne"><span class="buttonlB">Learn more</span></a>
+                        <a href="berwick.html"><div class="img2"></div></a>
+         </div>
+         <div class="two"><div class="cardR">
+                     Europe<br><a href="#partOne"><span class="buttonlB">Learn more</span></a>
+                     <a href="europe.html"><div class="img2"></div></a>
+        </div></div>
+         <div class="two"><div class="cardL">
+                     Tour<br><a href="#partOne"><span class="buttonlB">Learn more</span></a>
+                     <a href="travel.html"><div class="img"></div></a>
+        </div></div>
+
+</div>
+<div class="partTwo" id="partTwo">
+       <div class="linetext">Work</div>
+        <div class="three"><div class="cardL">
+                       IELTS tutor<br><a href="#partOne"><span class="buttonlB">2022</span></a>
+                       <div class="img"></div>
+        </div></div>
+        <div class="three"><div class="cardR">
+                       Parcel shop<br><a href="#partOne"><span class="buttonlB">2023</span></a>
+                        <div class="img2"></div>
+         </div></div>
+         <div class="four"><div class="cardR">
+                     Florist intern<br><a href="#partOne"><span class="buttonlB">2023</span></a>
+                     <div class="img2"></div>
+        </div></div>
+         <div class="four"><div class="cardL">
+                     Waitress<br><a href="#partOne"><span class="buttonlB">Current</span></a>
+                     <div class="img"></div>
+        </div></div>
+</div>
+<div class="partThree">
+         <div class="vibeL"></div><div class="vibeS"></div> <div class="deco"></div>
+        <div class="textOne">
+                       <span class="handw">#SayHi</span><br>
+                       Contact me<br>
+                       <span class="smallp">If you found my work interesting, have a job for me, or want to be my friends, please drop me a line.</span><br>
+                       <a href="mailto:elleliao58@outlook.com"><span class="button">Drop me a line</span></a>
+         </div>
+         <div class="footer">About<br>
+                 <a href="about.html">About me</a><br>   <a href="https://www.instagram.com/expressdesign102">MyWorks</a><br>   <a href="exp.html">MyExperience</a><br>   <a href="mailto:elleliao58@outlook.com">Contact</a>
+         </div>     
+         <div class="two"><div class="footer">Socials<br>
+                 <a href="https://profile.indeed.com/?hl=en_GB&co=GB&from=gnav-jobseeker-profile--profile-one-frontend">Indeed</a><br>   
+                  <a href="https://www.linkedin.com/in/%E7%8E%A5-%E5%BB%96-7124b72a0/">Linkedin</a><br>   
+                  <a href="https://www.instagram.com/expressdesign102/">instagram</a><br>  
+         </div></div>  
+         <div class="footer-img">Image from rawpixel.com</div>   
+</div>
+<a href="#menu-content"><div class="menu-icon"></div></a>
+ <div id="menu-content">
+    <div class="textOne">
+         <a href="about.html">About</a><br>    <a href="https://www.instagram.com/expressdesign102/">MyWorks</a><br>    
+          <a href="exp.html">MyExperience</a><br>   <a href="mailto:elleliao58@outlook.com">Contact</a><br>
+          <span class="green"><a href="#">Back</a></span>
+    </div>
+  
+ </div>
+</body>
