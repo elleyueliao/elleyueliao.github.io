@@ -1,0 +1,417 @@
+<html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MyPortfolio</title>
+<head>
+<meta name="theme-color" content="#D6EDFF">
+<link href="https://fonts.googlefonts.cn/css?family=Homemade+Apple|Katibeh" rel="stylesheet">
+<link href="https://fonts.googlefonts.cn/css?family=Poppins" rel="stylesheet">
+<style>
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body{background-color:#D6EDFF;}
+
+a{color:#000;}
+
+.head{
+        background-color:#5ABE6A;
+         height:130%;width:100%;
+         position:absolute;
+         top:0;left:0;
+       
+}
+.partOne{
+         height:130%;width:100%;
+         font-size:19px;
+         font-family: 'Poppins', sans-serif;
+          display:inline-block;
+         position:absolute;
+         top:130%;left:0;
+}
+.partTwo{
+       
+         height:130%;width:100%;
+         font-size:19px;
+         font-family: 'Poppins', sans-serif;
+          display:inline-block;
+         position:absolute;
+         top:400%;left:0;
+}
+.partThree{
+         height:130%;width:100%;
+         font-size:19px;
+         font-family: 'Poppins', sans-serif;
+          display:inline-block;
+         position:absolute;
+         top:700%;left:0;
+}
+.partFour{
+         height:130%;width:100%;
+         font-size:19px;
+         font-family: 'Poppins', sans-serif;
+          display:inline-block;
+         position:absolute;
+         top:1050%;left:0;
+}
+.title {
+          color:#D6EDFF;
+          font-size:35px;
+          font-family: 'Katibeh', cursive;
+          position:absolute;
+          top:3%;
+          left:5%;
+}
+.links {
+          color:#D6EDFF;
+          font-size:15px;
+          font-family:;
+          word-spacing:30px;
+          position:absolute;
+          top:5%;
+          right:5%;
+}
+.links a{color:#D6EDFF;text-decoration:none;}
+.textOne{
+         color:#D6EDFF;
+         width:40%;
+        font-size:70px;
+        
+        font-family: 'Katibeh', cursive;
+        position:absolute;
+        top:20%;left:10%;
+}
+.partOne .textOne{width:80%;color:#000;top:5%;}
+.partThree .textOne{width:80%;color:#000;top:5%;}
+.partTwo .textOne{width:80%;color:#000;top:5%;}
+.partFour .textOne{color:#000;text-align:center;left:30%}
+
+.handw{font-size:30px;color:#D6EDFF;font-family: 'Homemade Apple', cursive;line-height:15px;}
+.partTwo .handw{line-height:60px;}
+.small{font-size:30px;display:inline-block;margin-top:40px;}
+.smallp{font-size:19px;font-family: 'Poppins', sans-serif;display:inline-block;margin-top:20px;}
+.mark{display:inline-block;margin-top:100px;}
+.tiny{font-size:11px;font-family: 'Poppins', sans-serif;}
+.small a{text-decoration:none;color:#000;}
+
+/*color*/
+.green{color:#5ABE6A;}
+.oran{color:#FF8B49}
+.blue{color:#2C684B}
+.bro{color:#BE8B5C}
+.dblue{color:#292368}
+/*color*/
+.linetext{
+         width:90%;
+        font-size:50px;
+        text-align:center;
+        font-family: 'Katibeh', cursive;
+        color:rgba(0,0,0,0);
+        -webkit-text-stroke: 1px #5ABE6A;
+        word-spacing:50px;
+        position:absolute;
+        top:80%;left:5%;
+        animation:none 1s ease;
+}
+.ns{word-spacing:10px;}
+
+.ns:hover{color: #5ABE6A;-webkit-text-stroke: 0px #5ABE6A;}
+
+.button{
+             height:70px;
+             width:200px;
+             border-radius:20px;
+             background-color:#5abe6a;
+             display:inline-block;
+             font-size:33px;
+             line-height:55px;
+             color:#D6EDFF;
+             margin-top:40px;
+}
+.buttonl{
+             height:70px;
+             width:200px;
+             border:1px dashed #D6EDFF;
+             font-family: 'Katibeh', cursive;
+             border-radius:20px;
+             background-color:;
+             display:inline-block;
+             font-size:30px;
+             line-height:55px;
+             color:#D6EDFF;
+             text-align:center;
+             margin-top:20px;
+}
+
+.img{
+       height:360px;width:300px;
+       background-image:url(london.jpg);
+       background-size:100%;background-repeat:no-repeat;
+       border-radius:10px;
+       position:absolute;
+       top:20%;right:10%;
+       animation:no 2s ease;
+}
+img{border-radius:20px;}
+.partThree img{width:90%;}
+
+.selector{
+            background-color:#D6EDFF;
+            height:100px;
+            width:100%;
+          border-radius:10px;
+          border-top:1px solid #000;
+           position:fixed;
+            bottom:0%;right:0%;
+            
+}
+.selector-holder{position:absolute;left:10%}
+.selector .buttonl{color:#000;border: 1px dashed #000;}
+
+.footer{
+            font-size:30px;
+            font-family: 'Katibeh', cursive;
+            position:absolute;
+            top:75%;left:10%;
+}
+.two .footer{left:25%;}
+.footer a{font-size:19px;font-family:ara;text-decoration:none;color:#000;}
+.vibe{
+         height:90px;width:90px;
+         border-radius:100%;
+         background-image:linear-gradient(#2C684B, rgba(255,255,255,0));
+         position:absolute;
+        top:25%;left:60%;
+}
+.vibeL{
+         height:125px;width:125px;
+         border-radius:100%;
+         background-image:linear-gradient(#2C684B, rgba(255,255,255,0));
+         position:absolute;
+        top:67%;left:35%;
+}
+.vibeS{
+         height:30px;width:30px;
+         border-radius:100%;
+         background-color:#feb661;
+         position:absolute;
+        top:87%;left:60%;
+}
+.deco{
+         height:90px;width:90px;
+         background-image:url(deco/deco1.svg);
+         background-size:100%;background-repeat:no-repeat;
+         position:absolute;
+         top:100%;left:60%;
+         animation:none 1s ease;
+}
+.footer-img{
+       height:400px;width:300px;
+       background-image:url(top.png);
+       background-size:100%;background-repeat:no-repeat;
+       border-radius:10px;
+       position:absolute;
+       top:70%;left:75%;
+       color:transparent;
+}
+.textOne a{color:#000;text-decoration:none;}
+ .menu-icon{
+            height:40px;
+            width:40px;
+            background-image:url(leaf.png);
+            background-size:100%;
+            position:fixed;
+            display:none;
+            top:3%;right:5%;
+            
+ }
+ #menu-content{
+            height:100%;
+            width:100%;
+            background-color:#D6EDFF;
+            position:fixed;
+            top:0%left:0%;
+            display:none;
+            z-index:3;
+ }
+ #menu-content:target{display:block;}
+ #menu-content .textOne{top:30%;}
+ 
+             
+@media screen and (max-width:700px){
+ /*this head*/
+  
+ .handw{font-size:30px;display:inline-block;margin-bottom:35px;}
+ .vibe{z-index:-1;top:12%;}
+ .textOne{width:90%;font-size:60px;left:5%;top:12%;}
+ .small{margin-top:20px;}
+ .card{top:75%;left:23%;} 
+ .card2{top:107%;left:23%;border:1px dashed #000}
+ .button{line-height:83px;margin-top:30px;}
+ .buttonl{line-height:83px;}
+ .links{opacity:0;}
+ .menu-icon{display:block;z-index:3;}
+  .head .img{top:60%;left:0;height:420px;width:100%;}
+  .head .smallp{font-size:20px;}
+
+  /*general image setting*/
+  img{margin-top:50px;}
+
+  /*this is partOne*/
+  .partOne{top:139%;}
+  .partOne img{width:100%;}
+  .partOne .textOne{width:90%;}
+  .textOne .smallp{font-size:15px;}
+
+   /*this is partTwo*/
+  .partTwo{top:285%;}
+  .partTwo img{width:100%;}
+  .partTwo .textOne{width:90%;}
+
+   /*this is partThree*/
+  .partThree{top:420%;}
+  .partThree img{width:100%;}
+  .partThree .textOne{width:90%;}
+
+
+
+ /*this partFour*/
+ .partFour{top:610%;}
+  .partFour .handw{color:#5ABE6A;}
+ .partFour .textOne{top:10%;left:5%}
+ .footer{top:55%;}
+ .two .footer{top:55%;left:45%;}
+ .partFour .deco{top:75%;z-index:-1;}
+ .partfour .vibeS{display:none;}
+ 
+ 
+ .partFour .footer-img{left:5%;top:75%;z-index:-1;}
+
+/*the hidden selector*/
+  .selector{display:none;}
+  
+  .head .smallp{font-size:20px;}
+  .partFour .smallp{font-size:20px;}
+}
+
+
+
+  
+
+</style>
+</head>
+<body>
+
+<div class="head">
+       <div class="title">Elle Liao</div>
+       <div class="links"><a href="/2023/about.html">About</a>    <a href="https://www.instagram.com/expressdesign102/">MyWorks</a>    <a href="/2023/exp.html">MyExperience</a>   <a href="mailto:elleliao58@outlook.com">Contact</a></div>  
+       <div class="textOne"><span class="handw">2 years</span><br>
+                                           London<br>
+                                            <span class="smallp">I lived in London for 2 years between 2020 and 2022. I lived in many different boroughs 
+                                                                                  and discovered various beautiful spots around the city. <br>
+                                                                                
+                                             </span><br>
+                                             <a href="#partOne"><span class="buttonl">Scroll down</span></a><br>
+                                             
+                                             
+                               
+      </div>
+      
+      <div class="img"></div>
+</div>
+<div class="partOne" id="partOne">
+      <div class="textOne">Nottinghill<span class="smallp">
+        I stayed at 186 holland avenue for almost half the time while I was in London. Nottinghill is a peaceful, flunent and safe neighborhood 
+        decorated with lovely gardens and classic terraced houses.<br><br>
+       
+          <b>Parks</b><br>
+         I walk to the kensington gardens everyday to see the birds there. There are canada goose, swan, grey goose and egyptican goose that
+         inhabit the pond in harmony. I felt most connected with an egyptican goose who grown up alone with out any sibings and named her "littleone".<br><br>
+          <b>Westfield</b><br>
+         186 Holland park sits on the boundary between the elegant kensington and the vibrant shepherd's bush. I enjoy crossing the boundary and went to
+          the westfield mall just across the street and buy myself a cup of T4 bubble tea. I also venture into the shepherd's bush community to look
+           for local products during the weekends.<br><br>
+          
+         <img src="nth.png"><br>
+        
+         </div>
+</div>
+<div class="partTwo" id="partTwo">
+      <div class="textOne">Aldgate<span class="smallp">
+        I moved to East london - Aldgate during transition period between my contracts in a designer hotel called Leman Locke.<br><br>
+        
+          <b>East and central London</b><br>
+         Benefit by its close distance to the city of london, East london is full of skyscappers that light up the city at nights. The area is recently
+         refurbished and refreshing with a hybird of different cultures. It is not very safe to walk around at night time though during my stay.
+         I hope the security has improved over the years.<br><br>
+        
+          <b>The hotel</b><br>
+          I love the interior design of all Locke hotels and the unique products they supplied to each guests. However, since it is an apartel, it doesnt
+          have any housekeeping service. The natural light is not very sufficient if you plan to work or stay in the rooms.<br><br>
+          
+          
+          <img src="lem.png"><br>
+       
+          
+         </div>
+</div>
+<div class="partThree" id="partThree">
+      <div class="textOne">Bermondsay and Southwark<span class="smallp">
+        My favourite spot in London. Very well connectby DLR and give me the opportunity to explore the amazing docklands<br><br>
+        
+         <b>Bermondsey</b><br>
+          Bermondsey is a diversed yet safe community and home to many craft beer stores and designer vibe shops that brings you daily inspirations.<br><br>
+         
+          <b>Southbank</b><br>
+          I walk down the southbank to go back to the Kensington garden whenever I have time and enjoyed counting the bridges across the river.<br><br>
+          <b>Docklands</b><br>
+           Limehouse, Canary wharf, Cananda waters, Beckton shopping park... Weekly adventure to the docklands is my all time favourite activity in
+           London.<br><br>
+          <img src="walk.png"><br><br>
+          <b> This page is only an abstract of my experience in London. I also stayed in bayswater, south kensington, westminister, richmond and camden : )</b><br><br>
+         <img src="rich.png">
+          
+         </div>
+</div>
+<div class="partFour">
+         <div class="vibeS"></div> <div class="deco"></div>
+        <div class="textOne">
+                       <span class="handw">#SayHi</span><br>
+                       Contact me<br>
+                       <span class="smallp">If you found my work interesting, have a job for me, or want to be my friends, please drop me a line.</span><br>
+                       <a href="mailto:elleliao58@outlook.com"><span class="button">Drop me a line</span></a>
+         </div>
+         <div class="footer">About<br>
+                 <a href="/2023/about.html">About me</a><br>   <a href="https://www.instagram.com/expressdesign102">MyWorks</a><br>   <a href="/2023/exp.html">MyExperience</a><br>   <a href="mailto:elleliao58@outlook.com">Contact</a>
+         </div>     
+         <div class="two"><div class="footer">Socials<br>
+                 <a href="https://profile.indeed.com/?hl=en_GB&co=GB&from=gnav-jobseeker-profile--profile-one-frontend">Indeed</a><br>   
+                  <a href="https://www.linkedin.com/in/%E7%8E%A5-%E5%BB%96-7124b72a0/">Linkedin</a><br>   
+                  <a href="https://www.instagram.com/expressdesign102/">instagram</a><br>  
+         </div></div>  
+         <div class="footer-img">Image from rawpixel.com</div>   
+</div>
+</body>
+<div class="selector">
+       <div class="selector-holder">
+          <a href="#partOne"><span class="buttonl">Nottinghill</span></a>  <a href="#partTwo"><span class="buttonl">Aldgate</span></a>
+           <a href="#partThree"><span class="buttonl">Bermondsey</span></a>
+       </div>
+</div>
+
+  
+<a href="#menu-content"><div class="menu-icon"></div></a>
+ <div id="menu-content">
+    <div class="textOne">
+         <a href="/2023/about.html">About</a><br>    <a href="https://www.instagram.com/expressdesign102/">MyWorks</a><br>    
+          <a href="/2023/exp.html">MyExperience</a><br>   <a href="mailto:elleliao58@outlook.com">Contact</a><br>
+          <span class="green"><a href="#">Back</a></span>
+    </div>
+  
+ </div>
+</body>
+</html>
